@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "types": ["svelte"],
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "src/**/*.d.ts"]
+}

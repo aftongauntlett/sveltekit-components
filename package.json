@@ -6,11 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "watch": "chokidar 'src/**/*' -c 'npm run build'"
   },
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "chokidar": "^4.0.3",
+    "postcss": "^8.5.4",
     "svelte": "^5.28.1",
-    "vite": "^6.3.5"
+    "svelte-check": "^4.2.1",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
