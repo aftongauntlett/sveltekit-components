@@ -9,7 +9,19 @@
     "preview": "vite preview",
     "watch": "chokidar 'src/**/*' -c 'npm run build'"
   },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "svelte": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "svelte": "./dist/index.js",
   "devDependencies": {
     "@microsoft/api-extractor": "^7.52.8",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
